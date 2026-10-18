@@ -3,8 +3,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geometricshapes.HelloController">
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geometricshapes.HelloController">
    <children>
       <Button layoutX="21.0" layoutY="67.0" mnemonicParsing="false" onAction="#square" text="Square" />
       <Button layoutX="21.0" layoutY="108.0" mnemonicParsing="false" onAction="#rectangle" text="Rectangle" />

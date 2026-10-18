@@ -12,7 +12,7 @@ public abstract class GeometricShapes extends Canvas {
     protected GraphicsContext gc;
     protected Color Farba;
     private Timeline casovac;
-    private int rychlost;
+    protected int rychlost;
 
     public GeometricShapes(int x, int y, int r, Color f){
         super(40,40);
@@ -24,13 +24,15 @@ public abstract class GeometricShapes extends Canvas {
         casovac.play();
     }
 
-    private void posun(){
-        if((getLayoutX()>300) || (getLayoutX()<10)){
-            rychlost = -rychlost;
-        }
-        setLayoutX(getLayoutX()+rychlost);
-        vykresli();
-    }
+    protected abstract void posun();
 
     protected abstract void vykresli();
+
+    public void zmenaFarby(Color f) {
+        Farba = f;
+    }
+
+    public void posunutie(){
+        setLayoutY(getLayoutY()+30);
+    }
 }
