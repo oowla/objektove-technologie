@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pocitanie.HelloController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="runButton" mnemonicParsing="false" onAction="#run" text="Run All" />
+            <TextField fx:id="input" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="360.0" prefWidth="191.0">
+               <children>
+                  <Label text="Faktorial" />
+                  <TextArea editable="false" fx:id="faktorial" prefHeight="200.0" prefWidth="200.0" />
+                  <ProgressBar fx:id="progressFaktorial" prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="360.0" prefWidth="209.0">
+               <children>
+                  <Label text="Mocnina" />
+                  <TextArea editable="false" fx:id="mocnina" prefHeight="200.0" prefWidth="201.0" />
+                  <ProgressBar fx:id="progressMocnina" prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="360.0" prefWidth="201.0">
+               <children>
+                  <Label text="Fibonacci" />
+                  <TextArea editable="false" fx:id="fibonacci" prefHeight="200.0" prefWidth="200.0" />
+                  <ProgressBar fx:id="progressFibonacci" prefWidth="200.0" progress="0.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
